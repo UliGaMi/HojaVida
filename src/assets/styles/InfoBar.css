@@ -1,0 +1,70 @@
+
+.infoBar
+{
+    display:flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #4E4963;
+    align-items: center;
+    justify-content: start;
+    position: fixed;
+    height: 100%;
+}
+
+.principal
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 20px 0 100px 0;
+}
+.datos
+{
+    color: white;
+    margin: 8px;
+    font-size: 12px;
+    text-align: center;
+    
+}
+
+.nombre
+{
+    color: white;
+    font-size: 15px;
+}
+
+
+@media (max-width: 880px)
+{
+    .infoBar{
+        width: 100%;
+        background-color: #4E4963;
+        height: 15%;
+        flex-flow: wrap row;
+        justify-content: center;
+    }
+
+    .principal
+    {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+    }
+
+
+
+    .datos
+    {
+        font-size: 10px;
+        margin: 5px;
+        
+    }
+
+    .nombre
+    {
+        font-size: 12px;
+        margin: 0 0 0 8px;
+    }
+}

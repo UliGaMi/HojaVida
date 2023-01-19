@@ -1,0 +1,24 @@
+.divImg
+{
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+.imgPerfil
+{
+    width: 100%;
+}
+
+
+@media (max-width: 880px)
+{
+    .divImg{
+        width: 60px;
+        height: 60px;
+    }
+}

@@ -1,5 +1,7 @@
 import CircleImg from "../atoms/CircleImg";
 import '../../assets/styles/InfoBar.css';
+import Info from "../atoms/info";
+
 function InfoBar({person}) {
     return ( 
         <div className="infoBar">
@@ -7,9 +9,7 @@ function InfoBar({person}) {
                 <CircleImg route={person.img}></CircleImg>
                 <h2 className="nombre">{person.name}</h2>   
             </div>
-            <h3 className="datos">📞 {person.phone}</h3>
-            <h3 className="datos">✉️ {person.email}</h3>
-            <h3 className="datos">🏠 {person.address}</h3>
+            <Info person={person}></Info>
 
             
 
